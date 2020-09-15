@@ -24,21 +24,21 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        developer: 'Sulab'
+        developer: 'Sulab Dhungana'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        developer: 'Sulab'
+        developer: 'Sulab Dhungana'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        developer: 'Sulab'
+        developer: 'Sulab Dhungana'
     })
 })
 
@@ -76,14 +76,14 @@ app.get('/weather', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404 Error :(',
-        developer: 'Sulab',
+        developer: 'Sulab Dhungana',
         errorMessage: 'Help Article Not Found'
     })
 })
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404 Error :(',
-        developer: 'Sulab',
+        developer: 'Sulab Dhungana',
         errorMessage: 'Page Not Found'
     })
 })

@@ -66,3 +66,7 @@ button:hover {
   background-color: #fff;
   color: #888888;
 }
+
+img#weather-icon {
+  border-radius: 50%;
+}
